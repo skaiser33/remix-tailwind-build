@@ -67,21 +67,6 @@ export default function NavDropdown(props) {
                 route="/meet-our-team"
               />
             ))}
-            {/* <NavSubmenuLink
-                name={props.menu[0]}
-                menuItemId={0}
-                route="/meet-our-team"
-              />
-              <NavSubmenuLink
-                name="Support"
-                menuItemId={1}
-                route="/meet-our-team"
-              />
-              <NavSubmenuLink
-                name="License"
-                menuItemId={2}
-                route="/meet-our-team"
-              /> */}
             {props.name === "Services" && (
               <form method="POST" action="#" role="none">
                 <button

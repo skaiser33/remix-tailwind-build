@@ -1,6 +1,5 @@
 import { Link } from "@remix-run/react";
 
-/* eslint-disable jsx-a11y/anchor-is-valid */
 export default function NavSubmenuLink(props) {
   return (
     <Link
