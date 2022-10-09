@@ -1,5 +1,13 @@
-export default function MeetOurTeam() {
+import Nav from "~/components/nav";
+
+export default function meetOurTeam() {
   return (
-    <div className="flex flex-col h-screen justify-between">Meet Our Team</div>
+    <>
+      <Nav cartCount={3} />
+      <div className="flex flex-col h-screen justify-between">
+        Meet Our Team
+      </div>
+      ;
+    </>
   );
 }

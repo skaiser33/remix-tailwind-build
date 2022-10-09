@@ -67,7 +67,7 @@ export default function NavDropdown(props) {
                 route="/meet-our-team"
               />
             ))}
-            {props.name === "Services" && (
+            {props.name === "Account" && (
               <form method="POST" action="#" role="none">
                 <button
                   type="submit"
