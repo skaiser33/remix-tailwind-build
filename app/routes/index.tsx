@@ -1,5 +1,5 @@
 import { Link } from "@remix-run/react";
-import Nav from "~/components/nav";
+import Nav from "~/components/Nav";
 
 export default function Index() {
   return (
@@ -9,7 +9,7 @@ export default function Index() {
       </header>
 
       <main className="mb-auto h-10 bg-green-500">Content</main>
-      <footer className="h-10 bg-blue-500 mt-auto">FOOTER</footer>
+      <footer className=" bg-blue-500 mt-auto">FOOTER</footer>
     </div>
   );
 }
