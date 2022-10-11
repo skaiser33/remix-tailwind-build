@@ -1,4 +1,4 @@
-import { Link } from "@remix-run/react";
+import Footer from "~/components/Footer";
 import Nav from "~/components/nav";
 
 export default function Index() {
@@ -8,7 +8,7 @@ export default function Index() {
         <Nav cartCount={3} />
       </header>
       <main className="mb-auto h-10 bg-cwsGreen">Content</main>
-      <footer className=" bg-cwsBlue text-white mt-auto">FOOTER</footer>
+      <Footer />
     </div>
   );
 }
