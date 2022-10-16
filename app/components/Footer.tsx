@@ -1,17 +1,21 @@
 import { format } from "date-fns";
-import ReactDOM from "react-dom";
+import { Link } from "@remix-run/react";
 import { SocialIcon } from "react-social-icons";
-
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ScrollToTop from "react-scroll-to-top";
+// import ScrollButton from "./ScrollButton";
 
 export default function Footer() {
+  // year formatting
   const year = format(new Date(), "yyyy");
+
   return (
     <footer className=" bg-cwsBlue text-white mt-auto">
-      <div className="flex">
-        <div className="w-1/3 p-12">
+      <div className="flex max-w-screen-lg m-auto">
+        <div className="w-1/3 p-12  ">
           <h2 className="text-cwsGreen">Product Categories</h2>
-          <div>Hosting and Domains</div>
+          <div>
+            <Link to="/">Hosting and Domains</Link>
+          </div>
           <div>Monthly Maintenance</div>
           <div>Web Design & Development</div>
         </div>
@@ -22,17 +26,65 @@ export default function Footer() {
           <div>Contact</div>
         </div>
         <div className="w-1/3 p-12">
-          <SocialIcon url="https://twitter.com/jaketrent" bgColor="white" />
-          {/* <FontAwesomeIcon className="fa-brands fa-facebook-f" /> */}
-          {/* Col3 */}
-          {/* <FontAwesomeIcon icon="fa-brands fa-facebook-f" /> */}
-          {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-            <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
-          </svg> */}
+          <SocialIcon
+            className="m-1"
+            target="_blank"
+            url="https://twitter.com/childrenhaving"
+            bgColor="white"
+          />
+          <SocialIcon
+            className="m-1"
+            target="_blank"
+            url="https://facebook.com/chcband"
+            bgColor="white"
+          />
+          <SocialIcon
+            className="m-1"
+            target="_blank"
+            url="https://instagram.com/childrenhavingchildren"
+            bgColor="white"
+          />
+          <SocialIcon
+            className="m-1"
+            target="_blank"
+            url="mailto:skaiser33@gmail.com"
+            bgColor="white"
+          />
+
+          <div className="flex justify-end p-12">
+            Copyright © {year} Steven Kaiser
+          </div>
         </div>
-      </div>
-      <div className="flex justify-end p-12">
-        Copyright © {year} Steven Kaiser
+        {/* <button
+          type="button"
+          // className="inline-flex focus:ring-offset-gray-100 px-5 items-center"
+          className={
+            1 === 1
+              ? "inline-flex focus:ring-offset-gray-100 px-5 items-center"
+              : "hidden"
+          }
+          // className="hidden"
+          id="scroll-to-top"
+          aria-expanded="true"
+          aria-haspopup="true"
+          // onClick={scrollToTop}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4.5 15.75l7.5-7.5 7.5 7.5"
+            />
+          </svg>
+        </button> */}
+        <ScrollToTop smooth color="white" />
       </div>
     </footer>
   );

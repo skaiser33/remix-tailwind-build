@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from "react";
+// import { ChevronDownIcon } from "@heroicons/react/24/solid";
+
 import NavSubmenuLink from "./NavSubmenuLink";
 
 export default function NavDropdown(props) {
@@ -23,6 +25,8 @@ export default function NavDropdown(props) {
         >
           {props.name}
           {/* <!-- Heroicon name: mini/chevron-down --> */}
+          {/* <ChevronDownIcon /> */}
+
           <svg
             className="-mr-1 ml-2 h-5 w-5"
             xmlns="http://www.w3.org/2000/svg"
