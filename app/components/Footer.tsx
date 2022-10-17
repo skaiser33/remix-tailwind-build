@@ -1,12 +1,33 @@
 import { format } from "date-fns";
 import { Link } from "@remix-run/react";
 import { SocialIcon } from "react-social-icons";
-import ScrollToTop from "react-scroll-to-top";
+// import ScrollToTop from "react-scroll-to-top";
+import { useEffect, useState } from "react";
 // import ScrollButton from "./ScrollButton";
 
 export default function Footer() {
   // year formatting
   const year = format(new Date(), "yyyy");
+
+  // scroll to top functionality
+  const [showTop, setShowTop] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 20) {
+        setShowTop(true);
+      } else {
+        setShowTop(false);
+      }
+    });
+  }, []);
 
   return (
     <footer className=" bg-cwsBlue text-white mt-auto">
@@ -55,19 +76,17 @@ export default function Footer() {
             Copyright © {year} Steven Kaiser
           </div>
         </div>
-        {/* <button
+        <button
           type="button"
-          // className="inline-flex focus:ring-offset-gray-100 px-5 items-center"
           className={
-            1 === 1
-              ? "inline-flex focus:ring-offset-gray-100 px-5 items-center"
+            showTop
+              ? "inline-flex focus:ring-offset-gray-100 px-5 items-center hover:cursor-pointer"
               : "hidden"
           }
-          // className="hidden"
           id="scroll-to-top"
           aria-expanded="true"
           aria-haspopup="true"
-          // onClick={scrollToTop}
+          onClick={scrollToTop}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -83,8 +102,9 @@ export default function Footer() {
               d="M4.5 15.75l7.5-7.5 7.5 7.5"
             />
           </svg>
-        </button> */}
-        <ScrollToTop smooth color="white" />
+        </button>
+
+        {/* <ScrollToTop smooth color="white" /> */}
       </div>
     </footer>
   );

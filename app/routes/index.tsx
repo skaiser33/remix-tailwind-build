@@ -1,5 +1,5 @@
 import Footer from "~/components/Footer";
-import Nav from "~/components/nav";
+import Nav from "~/components/Nav";
 
 export default function Index() {
   return (
@@ -7,7 +7,7 @@ export default function Index() {
       <header className="sticky top-0 z-50 border border-b-gray-400">
         <Nav cartCount={3} />
       </header>
-      <main className="mb-auto h-10 bg-cwsGreen">Content</main>
+      <main className="mb-auto   h-screen bg-cwsGreen">Content</main>
       <Footer />
     </div>
   );
