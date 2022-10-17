@@ -5,7 +5,7 @@ import NavLinkCustom from "./NavLinkCustom";
 
 export default function Nav({ cartCount }) {
   return (
-    <div id="nav" className="flex items-center">
+    <div id="nav" className="flex items-center bg-white">
       <img
         src="/img/alogo-4.png"
         alt="logo"

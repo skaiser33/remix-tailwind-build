@@ -9,13 +9,7 @@
     "start": "remix-serve build"
   },
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.8",
-    "@fortawesome/fontawesome-free-regular": "^5.0.13",
-    "@fortawesome/fontawesome-free-solid": "^5.0.13",
-    "@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "@heroicons/react": "^2.0.12",
-    "@react-icons/all-files": "^4.1.0",
     "@remix-run/node": "^1.7.2",
     "@remix-run/react": "^1.7.2",
     "@remix-run/serve": "^1.7.2",
@@ -23,11 +17,8 @@
     "icons": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-fontawesome": "^1.7.1",
     "react-icons": "^4.6.0",
-    "react-scroll-to-top": "^3.0.0",
-    "react-social-icons": "^5.15.0",
-    "social": "^0.4.0"
+    "react-social-icons": "^5.15.0"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.7.2",

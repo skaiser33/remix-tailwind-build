@@ -1,9 +1,7 @@
 import { format } from "date-fns";
 import { Link } from "@remix-run/react";
 import { SocialIcon } from "react-social-icons";
-// import ScrollToTop from "react-scroll-to-top";
 import { useEffect, useState } from "react";
-// import ScrollButton from "./ScrollButton";
 
 export default function Footer() {
   // year formatting
@@ -103,8 +101,6 @@ export default function Footer() {
             />
           </svg>
         </button>
-
-        {/* <ScrollToTop smooth color="white" /> */}
       </div>
     </footer>
   );
