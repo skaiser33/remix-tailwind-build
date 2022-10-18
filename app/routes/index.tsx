@@ -1,16 +1,17 @@
 import Footer from "~/components/Footer";
-import Nav from "~/components/Nav";
-import Hero from "~/components/Hero";
+import Nav from "~/components/Nav/Nav";
+import Hero from "~/components/Home/HomeHero";
+import LearnMore from "~/components/Home/LearnMore";
+import WhatWeOffer from "~/components/Home/WhatWeOffer";
 
 export default function Index() {
   return (
     <div className="flex flex-col min-h-screen justify-between bg-cwsGreen">
-      <header className="sticky top-0 z-50 border border-b-gray-400">
-        <Nav cartCount={3} />
-      </header>
-      <Hero />
-      <main className=""></main>
-      <Footer />
+      <main className="">
+        <Hero />
+        <LearnMore />
+        <WhatWeOffer />
+      </main>
     </div>
   );
 }

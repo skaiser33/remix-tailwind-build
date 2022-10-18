@@ -1,4 +1,4 @@
-export default function Hero() {
+export default function HomeHero() {
   return (
     <div id="hero" className="mt-10">
       <div className="bg-[url('/img/hero-bill-640x360.jpg')] bg-center bg-cover h-40">

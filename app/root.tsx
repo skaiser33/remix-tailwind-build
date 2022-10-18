@@ -7,6 +7,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import Footer from "./components/Footer";
+import Nav from "./components/Nav/Nav";
 
 import styles from "./styles/app.css";
 
@@ -34,10 +36,14 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <header className="sticky top-0 z-50 border border-b-gray-400">
+          <Nav cartCount={3} />
+        </header>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <Footer />
       </body>
     </html>
   );
