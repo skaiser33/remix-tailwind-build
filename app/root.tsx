@@ -12,6 +12,12 @@ import styles from "./styles/app.css";
 
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
+  return [
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap",
+    },
+  ];
 }
 
 export const meta: MetaFunction = () => ({

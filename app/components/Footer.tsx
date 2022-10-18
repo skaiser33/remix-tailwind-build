@@ -46,31 +46,39 @@ export default function Footer() {
         </div>
         <div className="w-1/3 p-12">
           <SocialIcon
+            style={{ height: 25, width: 25 }}
             className="m-1"
             target="_blank"
             url="https://twitter.com/childrenhaving"
             bgColor="white"
+            label="twitter"
           />
           <SocialIcon
+            style={{ height: 25, width: 25 }}
             className="m-1"
             target="_blank"
             url="https://facebook.com/chcband"
             bgColor="white"
+            label="facebook"
           />
           <SocialIcon
+            style={{ height: 25, width: 25 }}
             className="m-1"
             target="_blank"
             url="https://instagram.com/childrenhavingchildren"
             bgColor="white"
+            label="instagram"
           />
           <SocialIcon
+            style={{ height: 25, width: 25 }}
             className="m-1"
             target="_blank"
             url="mailto:skaiser33@gmail.com"
             bgColor="white"
+            label="email"
           />
 
-          <div className="flex justify-end p-12">
+          <div className="flex  p-12 text-sm">
             Copyright © {year} Steven Kaiser
           </div>
         </div>

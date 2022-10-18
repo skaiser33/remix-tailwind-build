@@ -7,6 +7,9 @@ module.exports = {
         cwsBlue: "#005f84",
         cwsGreen: "#4ABA2E",
       },
+      fontFamily: {
+        // sans: "Roboto Condensed",
+      },
     },
   },
   plugins: [],
