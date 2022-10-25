@@ -3,6 +3,8 @@ import Nav from "~/components/Nav/Nav";
 import Hero from "~/components/Home/HomeHero";
 import LearnMore from "~/components/Home/LearnMore";
 import WhatWeOffer from "~/components/Home/WhatWeOffer";
+import WhyChooseUs from "~/components/Home/WhyChooseUs";
+import GetStarted from "~/components/Home/GetStarted";
 
 export default function Index() {
   return (
@@ -11,6 +13,8 @@ export default function Index() {
         <Hero />
         <LearnMore />
         <WhatWeOffer />
+        <WhyChooseUs />
+        <GetStarted />
       </main>
     </div>
   );
