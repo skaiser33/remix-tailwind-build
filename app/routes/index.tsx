@@ -5,6 +5,7 @@ import LearnMore from "~/components/Home/LearnMore";
 import WhatWeOffer from "~/components/Home/WhatWeOffer";
 import WhyChooseUs from "~/components/Home/WhyChooseUs";
 import GetStarted from "~/components/Home/GetStarted";
+import WeirdAl from "~/components/Home/WeirdAl";
 
 export default function Index() {
   return (
@@ -12,6 +13,7 @@ export default function Index() {
       <main className="">
         <Hero />
         <LearnMore />
+        <WeirdAl />
         <WhatWeOffer />
         <WhyChooseUs />
         <GetStarted />
